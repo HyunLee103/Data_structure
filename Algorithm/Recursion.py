@@ -59,15 +59,3 @@ lst = Mergesort(lst)
 
 print(lst)
 
-
-# 피보나치를 DP로
-def FibonacciDP(n):
-    dic = {}
-    dic[0] = 0
-    dic[1] = 1
-    for itr in range(2, n+1):
-        dic[itr] = dic[itr-1] + dic[itr-2]
-    return dic[n]
-
-for itr in range(0, 10):
-    print(FibonacciDP(itr))
